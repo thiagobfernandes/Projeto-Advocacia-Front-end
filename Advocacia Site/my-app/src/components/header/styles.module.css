@@ -1,0 +1,127 @@
+.header {
+    background-color: #011638;
+    font-family: "Merriweather", serif;
+    border-bottom: solid 1px #022052;
+    padding: 10px 30px;
+  
+    
+}
+
+.envolver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+    text-align: center;
+}
+
+.logo {
+    width: 20%;
+    img {
+        width: 100%;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+
+    .botaocel {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.menu {
+    display: none;
+}
+
+@media (width < 1000px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+
+        .botao {
+            display: none;
+        }
+        .envolver {
+            justify-content: space-between;
+        }
+
+        .botaocel {
+            display: block;
+        }
+
+        .logo {
+            width: 60%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background-color: #011638;
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 10;
+    }
+
+    .menu {
+        display: flex;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .showMenu {
+        display: flex;
+    }
+}
+
+@media (width > 400px) and (width < 600px) {
+    .header .links {
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 60%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (width < 400px) {
+    .header {
+        display: flex;
+        padding: 20px;
+
+        .logo {
+            width: 80%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        color: white;
+        font-size: 25px;
+    }
+}

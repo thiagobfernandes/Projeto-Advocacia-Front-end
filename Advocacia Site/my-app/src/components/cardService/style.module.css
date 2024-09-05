@@ -1,0 +1,65 @@
+
+        
+        
+
+        .card{
+            background: rgb(0,30,70);
+            background: linear-gradient(0deg, rgba(0,30,70,1) 5%, rgba(0,40,85,1) 38%);
+            width: 60%;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 3px #00078c ;
+            margin: 10px 0;
+            
+
+            .tituloCard{
+                color:#FFBC42;
+                font-weight: bold;
+                font-size: 18px;
+
+                
+
+            }
+            .textoCard{
+                font-size: 14px;
+                color: white;
+                margin-top: 14px;
+
+            }
+            
+
+        }
+
+
+        .imgCard{
+            color: #FFBC42;
+            font-size: 80px;
+            margin: 0px;
+          
+            
+        }
+
+       
+@media (width > 800px) {
+    .card{
+        width: 40%;
+        margin: 0px;
+
+        .tituloCard{
+            font-size: 28px;
+        }
+        
+        .imgCard{
+            font-size: 120px;
+        }
+
+        .textoCard{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 36px;
+        }
+    }
+
+}
+    
+
