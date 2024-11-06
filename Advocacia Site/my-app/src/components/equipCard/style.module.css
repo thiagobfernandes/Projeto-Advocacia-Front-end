@@ -10,7 +10,15 @@
     justify-content: center;
     box-shadow: 0 0 10px #CCC;
     border-radius: 10px;
+    text-align: center;
             
+
+    .textoCardEquip{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+    }
 
         .imagemCardEquip{
             width: 100%;
@@ -20,4 +28,23 @@
             }
         }
     }
+
+   
+}
+
+
+@media(width > 800px){
+
+    .cardEquip{
+        width: 40%;
+        .containerEquipCard{
+            .textoCardEquip{
+                padding: 10px 0; 
+            }
+            
+           
+            width: 100%;
+        }
+    }
+    
 }

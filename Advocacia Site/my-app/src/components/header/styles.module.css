@@ -3,9 +3,21 @@
     font-family: "Merriweather", serif;
     border-bottom: solid 1px #022052;
     padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    box-sizing: border-box  ;
+    
+  
   
     
+    width: 100%;
+    
+    
 }
+
+
+
 
 .envolver {
     display: flex;
@@ -36,6 +48,20 @@
         text-decoration: none;
         color: white;
     }
+    a:hover{
+        color: #FFBC42;
+        border-bottom: 1px solid  #FFBC42; ;
+    
+       
+       
+        text-align: center;
+       
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: color 0.4s ease; /* Transição suave */
+    }
+    
 }
 
 .menu {
@@ -47,6 +73,8 @@
         display: flex;
         justify-content: space-between;
         padding: 20px;
+      
+  
 
         .botao {
             display: none;
@@ -125,3 +153,78 @@
         font-size: 25px;
     }
 }
+
+@media(width > 800px) and (width < 1760px ) {
+    .header {
+       
+        
+.links{
+    a{
+        font-size: 16px;
+    }
+}
+       
+        
+        
+    }
+   
+     
+}
+
+
+
+@media(width > 700px) and (width < 1100px ) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        height: 100px;
+        
+  
+
+        .botao {
+            display: none;
+        }
+        .envolver {
+            justify-content: space-between;
+        }
+
+        .botaocel {
+            display: block;
+        }
+
+        .logo {
+            width: 40%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background-color: #011638;
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 10;
+    }
+
+    .menu {
+        display: flex;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .showMenu {
+        display: flex;
+    }
+}
+   
+     
+

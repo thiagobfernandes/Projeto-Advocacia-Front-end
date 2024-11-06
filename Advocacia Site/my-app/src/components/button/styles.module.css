@@ -14,9 +14,12 @@
     
 }
 .btn:hover{
- background-color: rgb(10, 127, 163);
+ background-color:#041633;
+ border: 1px solid white;
  color: white;
+ font-weight: bold;
  cursor: pointer;
+ transition: background-color 0.2s ease ;
 }
 
 @media(width < 1000px) {

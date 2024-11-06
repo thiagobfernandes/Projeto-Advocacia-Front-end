@@ -1,7 +1,7 @@
 .SectionService{
     background-color:#011638;
     color: white;
-  
+    scroll-margin-top: 80px; 
    
     padding: 20px 0;
     .envolved{
@@ -20,6 +20,7 @@
         h2{
             font-size: 24px;
             padding-bottom: 10px;
+            
           
             
         }

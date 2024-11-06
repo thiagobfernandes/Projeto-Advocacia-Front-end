@@ -1,12 +1,14 @@
+import { Button } from '../button';
 import styles from './style.module.css';
 
-interface Iprops {
+export interface Iprops {
     nome:string
-    oab:string
+    link:string
     img:string
+    textoButton:string
 }
 
-export const EquipCard= ({img,nome,oab}:Iprops) => {
+export const EquipCard= ({img,nome,link,textoButton}:Iprops) => {
 return (
     <>
     <section className={styles.cardEquip}>
@@ -16,7 +18,9 @@ return (
             </div>
             <div className={styles.textoCardEquip}>
                 <h2>{nome}</h2>
-                <p>{oab}</p>
+                <Button link={link} text={textoButton} />
+                
+               
             </div>
         </div>
 

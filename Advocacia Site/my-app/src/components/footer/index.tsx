@@ -22,7 +22,7 @@ export const Footer = ({email,iconEmail,iconInstagram,iconNumero,logo,instagram,
                     </div>
                     <div className={styles.texto}>
                         <p>{iconNumero} {numero}</p>
-                        <p>{iconInstagram} {instagram}</p>
+                        <p>{iconInstagram} <a href="https://www.instagram.com/advocaciasouzaeserra?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target='_blank'>{instagram}</a> </p>
                         <p>{iconEmail} {email}</p>
                     </div>
 

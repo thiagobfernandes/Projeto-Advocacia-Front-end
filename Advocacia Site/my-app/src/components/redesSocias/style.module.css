@@ -1,0 +1,105 @@
+.redes{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+    .container{
+        text-align: center;
+        width: 90%;
+       
+        .texto{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            
+            h2{
+                font: 24px;
+               
+                width: 100%;
+                
+            }
+            .paragrafo{
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 300;
+            }
+
+            .instagram{
+                margin-top: 10px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: justify;
+                gap: 10px;
+               a{
+                font-size: 44px;
+                color: rgb(184, 23, 23);
+               }
+            }
+            .facebook{
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: justify;
+                gap: 18px;
+               a{
+                font-size: 40px;
+                color: rgb(0, 9, 139);
+               }
+
+            }
+            
+
+
+        }
+    }
+}
+
+@media(width > 1000px) {
+    .redes{
+        padding: 100px 0;
+        .container{
+            .texto{
+               
+                justify-content: center;
+                align-items: center;
+
+                h2{
+                    font-size: 50px;
+                }
+
+          
+            .paragrafo{
+                font-size: 28px;
+                width: 60%;
+                margin-bottom: 30px;
+                line-height: 40px;
+                border-bottom: 2px solid black;
+                padding-bottom: 6px;
+            }
+
+            .instagram{
+                font-size: 28px;
+                margin-bottom: 20px;
+                
+                a{
+                    font-size: 60px;
+                }
+            }
+            .facebook{
+                font-size: 28px;
+                margin-bottom: 20px;
+                a{
+                    font-size: 55px;
+                }
+            }
+        }
+        }
+    }
+
+}

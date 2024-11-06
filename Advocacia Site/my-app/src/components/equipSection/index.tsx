@@ -1,21 +1,20 @@
 import styles from './style.module.css';
 import { EquipCard } from '../equipCard';
-import Souza from '../../assets/images/mulher.avif';
+import Thays from '../../assets/images/mulher.jpeg';
+import Marcos from '../../assets/images/homem.jpeg';
 import { Button } from '../button';
+import { link } from 'fs';
+import { Iprops } from '../equipCard';
 
 
 
 
     
 
-interface Iprops {
-    nome:string
-    oab:string
-    img:string
-}
-const valores:Iprops[] = [ {img:Souza, nome:"Renata Soares", oab:"789012/RJ"},
-    {img:Souza, nome:"Carolina Albuquerque", oab:"123456/SP"},
-    {img:Souza, nome:"Fernanda Lima", oab:"345678/MG"},
+
+const valores:Iprops[] = [ {img:Thays, nome:"Thayssa Serra",textoButton:"Fale com Thayssa",link:"https://api.whatsapp.com/send/?phone=5543999791183&text=Ol%C3%A1%21+Vim+pelo+site+e+preciso+de+uma+advogada+criminalista%21&type=phone_number&app_absent=0"},
+    {img:Marcos, nome:"Marcos Souza",link:"https://api.whatsapp.com/send/?phone=5543999791183&text=Whatsapp&type=phone_number&app_absent=0", textoButton:"Fale com Marcos"}
+   
 ];
 
 interface SectionProps {
@@ -36,14 +35,14 @@ export const EquipSection = ({paragrafo,titulo}:SectionProps) => {
                 <div className={styles.cards}>
                     
                 {valores.map((valor) =>
-               <EquipCard img={valor.img} nome={valor.nome} oab={valor.oab}/> 
+               <EquipCard img={valor.img} nome={valor.nome} link={valor.link} textoButton={valor.textoButton}  /> 
 
             )}
 
                 
                 </div>
                 <div className={styles.btncentralizar}>
-                <Button text='Fale Conosco'></Button>   
+                <Button text='Saiba Mais' link='https://www.instagram.com/advocaciasouzaeserra/'></Button>   
                 </div> 
 
 

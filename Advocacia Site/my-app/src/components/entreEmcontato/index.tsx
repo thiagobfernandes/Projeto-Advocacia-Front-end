@@ -12,7 +12,7 @@ return(
 
     <>
    
-    <section className={styles.contatoSection}> 
+    <section className={styles.contatoSection} id='Contato'> 
     <div className={styles.titulo}>
         <h2> {titulo} </h2>
         <p>{paragrafo}</p>

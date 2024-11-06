@@ -12,7 +12,7 @@ interface banner{
 export const Banner = ({titulo,img,p}:banner)=> {
     return (
         <>
-        <section className={styles.banner}>
+        <section className={styles.banner} id='Banner'>
             <div className={styles.images}>
                 <img src={img} alt="" />
 
@@ -22,7 +22,7 @@ export const Banner = ({titulo,img,p}:banner)=> {
                 <p className={styles.p}>{p}</p>
               
                 <div className={styles.botao}>
-                    <Button text='Entre em Contato'/>
+                    <Button text='Entre em Contato' link='https://api.whatsapp.com/send/?phone=5543999791183&text=Ol%C3%A1%21+Vim+pelo+site+e+preciso+de+uma+advogada+criminalista%21&type=phone_number&app_absent=0'/>
                 
                 </div>
 

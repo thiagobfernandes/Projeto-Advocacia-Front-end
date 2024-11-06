@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    scroll-margin-top: 80px; 
     .container{
         width: 80%;
 
@@ -17,6 +18,23 @@
 
         .texto{
             text-align: justify;
+            word-spacing: 3px;
+            font-weight: 100;
+
+            .enderecos {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                padding-top: 8px;
+                
+
+                .title{
+                    font-weight: bold;
+                }
+            }
+            
+                
+                
             
             
         }
@@ -39,7 +57,7 @@
     .container{
         display: flex;
         margin: 100px 0;
-        gap: 60px;
+        gap: 80px;
         align-items: center;
         width: 60%;
 
@@ -47,17 +65,28 @@
         .textlogo{
             display: block;
             width: 60%;
-            line-height: 30px;
+            
             font-size: 20px;
         }
+        .texto{
+        p{
+            width: 100%;
+            line-height: 40px;
+            text-align: justify;
+            font-size: 20px;
+            font-weight: 100;
+        }
+        }
+
+       
 
 
         .imgaux{
             width: 40%;
             display: block;
             img{
-                border-radius: 20px 20px 0px 20px;
-                box-shadow: 10px 10px 25px -3px rgba(0,0,0,1);
+                border-radius: 20px 20px 20px 20px;
+                box-shadow: 10px 10px t25px -3px rgba(0,0,0,1);
             }
         }
     }

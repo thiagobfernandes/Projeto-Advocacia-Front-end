@@ -1,5 +1,6 @@
 import exp from 'constants';
 import styles from './style.module.css';
+import { FaMapMarkedAlt } from "react-icons/fa";
 
 interface Iprops {
     imglogo:string,
@@ -25,6 +26,11 @@ export const Escritorio = ({imgescritorio,imglogo,texto,titulo}:Iprops) => {
 
                     <div className={styles.texto}>
                         <p>{texto}</p>
+                        <div className={styles.enderecos}>
+                            <p className={styles.title}>Endereços</p>
+                        <p><FaMapMarkedAlt /> Av. Paraná, 374 - Jardim Alegre/PR </p>
+                        <p><FaMapMarkedAlt /> Rua Marechal Floriano Peixoto, 250, Cambé/PR</p>
+                        </div>
 
 
                     </div>
