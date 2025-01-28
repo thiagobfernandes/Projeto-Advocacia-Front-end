@@ -1,23 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-MRF6SHM5');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8" />
-    <link rel="icon" href="icone.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="Souza & Serra"
-      content="Advocacia Souza & Serra"
-    />
-    <link rel="apple-touch-icon" href="" />
-   
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  
+    <meta name="Souza & Serra" content="Advocacia Souza & Serra" />
     <title>Advocacia Souza & Serra</title>
+    <link rel="icon" href="icone.png" />
+    <link rel="apple-touch-icon" href="" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <style>
+      /* Reset padding and margin */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MRF6SHM5"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <noscript>Desenvolvido por Thiago Borges Fernandes</noscript>
     <div id="root"></div>
-  
   </body>
 </html>

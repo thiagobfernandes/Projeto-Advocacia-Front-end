@@ -5,16 +5,28 @@
     padding: 0px;
     margin: 0px;
     font-family:  "Merriweather", serif; ;
+    box-sizing: border-box;
 }
 
 body{
  background-color: #F2F2F2;
+ width: 100%;
+ padding: 0px !important;
+ margin: 0px !important;
+ 
 
+}
 
+.Home{
+padding: 0px;
+margin: 0px;
 }
 
 html{
     scroll-behavior: smooth;
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
 
